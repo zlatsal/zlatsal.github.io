@@ -1,0 +1,105 @@
+html,
+body,
+address,
+blockquote,
+div,
+form,
+fieldset,
+caption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ul,
+li,
+ol,
+ul,
+table,
+tr,
+td,
+th,
+p,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+fieldset {
+  border: none;
+}
+
+body {
+	font: normal 85%/150% "segoe ui",helvetica,sans-serif;
+}
+
+.app-layout {
+  display:-webkit-flexbox;
+	display:-ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+.app-layout > h2 {
+  font-size: 2.25rem;
+  line-height: 120%;
+}
+
+h2::first-letter {
+  color: red;
+}
+
+h2 {
+  color: darkgreen;
+}
+
+h2 {
+  color: #000;
+}
+
+#heading {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+
+.screen-page {
+  padding: 1em;
+  min-height: 100%;
+  width: 65%;
+  background-color: hsl(0,0%,100%, 0.5);
+  color: #000;
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+
+.screen-page>p {
+  white-space: normal;
+}
+
+.screen-page>p:first-of-type {
+  margin-top: 2.25rem;
+}
+
+p[class="outdated"] {
+  text-decoration: line-through 2px red;
+}
+
+p:last-of-type::selection {
+  color: #fff;
+  background: black;
+}
+
+strong {
+  color: red;
+}
