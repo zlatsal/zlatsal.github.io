@@ -12,7 +12,6 @@ function grabSplit() {
     let words = lowerCase.split(" ");
 
     // clean duplicate values (in this case words in the sentence)
-    // note: learn more about Set
     let cleanDuplicate = [...new Set(words)];
     document.getElementById("result-words").innerHTML =
         cleanDuplicate.join("<br>");
